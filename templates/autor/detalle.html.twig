@@ -1,0 +1,10 @@
+{# templates/autor/detalle.html.twig #}
+{% extends '../base.html.twig' %}
+{% block body %}
+    <h1>Información sobre el autor</h1>
+    <ul>
+        <li>Nombre: {{ autor.nombre }}</li>
+        <li>Apellidos: {{ autor.apellidos }}</li>
+        <li>Fecha de nacimiento: {{ autor.fechaNacimiento | date('d/m/Y') }}</li>
+    </ul>
+{% endblock %}
